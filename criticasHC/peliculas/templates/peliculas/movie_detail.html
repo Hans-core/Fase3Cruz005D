@@ -1,0 +1,26 @@
+{% extends "base_generic.html" %}
+
+
+	{% block content %}
+  <section id="galeria" class="container">
+      <br><br>
+          <div class="row">
+           
+            <div class="col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="{{ movie.imagen.url }}" width = "50" height = "400" alt = "">
+                <div class="card-body">
+                  <h4 class="card-title">{{ movie.name }}</h4>
+                  <p class="card-text"><h3 >Genero</h3>{{ movie.gene }}</p> 
+                  <p class="card-text"><h3>Descipción</h3>{{ movie.desc }}</p>
+                  <p class="card-text"><h3>Nota</h3>{{ movie.clasif }}/10</p>
+                  <p class="card-text"><h3>Nota Publico </h3>{{ movie.clasifplu }}/10</p>
+                </div>
+              </div>
+              </div>
+            
+        </div>
+       		</section>
+
+
+	{% endblock  %}

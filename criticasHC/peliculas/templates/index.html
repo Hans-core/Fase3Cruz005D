@@ -1,0 +1,131 @@
+{% extends "base_generic.html" %}
+        {% block title %}
+        <title>
+        	CriticasHC
+        </title>>
+        {% endblock %}
+
+        {% block content %}
+                   <div class="row">
+                <div class="col-lg-12">
+                    <div id="inicio">
+                        <p>Conectarse</p>
+                    <a href="{% url 'inicio' %}" class="btn btn-primary btn-lg">Ingresar</a>
+                    
+                    
+                    <p>¿Quieres Crear una cuenta?</p>
+                    <a href="{% url 'registro' %}" class="btn btn-primary btn-lg">Registrar</a>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+             <!-- informacion de pagina -->
+            <section>
+                <div class= "row">
+                    
+                    <div class= "col-md-12">
+                        <div id= "Desarrollo">
+                            <p>
+                                Criticas Movies es la mejor página de críticas de Películas que conocerás, ofrece grande noticias, 
+                                con trailers de pelicula para que veamos en familia o los amigos. Una página con exelente  comunidad  
+                                Mucho respeto en los foros. Y lo más excelente es que te tendremos al día en las películas nuevas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                        <br><br>   
+                        <!-- carrucel -->             
+                        <div class= "row">
+                            <div class= "col-md-12 col-sm-12">
+                                <div id= "carousel1" class= "carousel slide" data-ride= "carousel">
+                                    <ol class= "carousel-indicators">
+                                        <li data-target= "#carousel1" data-slide-to= "0" class= "active">
+                                        </li>
+                                        <li data-target= "#carousel1" data-slide-to= "1">
+                                        </li>
+                                        <li data-target= "#carousel1" data-slide-to= "2">
+                                        </li>
+                                        <li data-target= "#carousel1" data-slide-to= "3">
+                                        </li>
+                                    </ol>
+                                    <div class= "carousel-inner">
+                                        <div class= "carousel-item active">
+                                           
+                                            <iframe width="1150" height="600" src="https://www.youtube.com/embed/7wd5KEaOtm4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                            <div class= "carousel-caption">
+                                                <h3>
+                                                    Scott Pilgrim Vs. The World
+                                                </h3>
+                                                
+                                            </div>
+                                        </div>
+                                        
+                                        <div class= "carousel-item ">
+                                           
+                                            <iframe width="1150" height="600" src="https://www.youtube.com/embed/oKNy-MWjkcU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <div class= "carousel-caption">
+                                                <h3>
+                                                    Space Jam 
+                                                </h3>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class= "carousel-item">
+                                            
+                                            <iframe width="1150" height="600" src="https://www.youtube.com/embed/tcdUhdOlz9M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            
+                                            <div class= "carousel-caption">
+                                                <h3>
+                                                    The Hangover
+                                                </h3>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class= "carousel-item">
+                                            
+                                            <iframe width="1150" height="600" src="https://www.youtube.com/embed/s7EdQ4FqbhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            
+                                            <div class= "carousel-caption">
+                                                <h3>
+                                                    Pulp Fiction
+                                                </h3>
+                                              
+                                            </div>
+                                        </div>
+                                        <div class= "carousel-item">
+                                            
+                                            <iframe width="1150" height="600" src="https://www.youtube.com/embed/cv276Wg3e7I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            
+                                            <div class= "carousel-caption">
+                                                <h3>
+                                                    Scarface
+                                                </h3>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <a class="carousel-control-prev" href="#carousel1" data-slide="prev" width="300">
+                                        <span class= "carousel-control-prev-icon" aria-hidden= "true">
+                                        </span>
+                                        <span class= "sr-only"> 
+                                            Previous
+                                        </span>
+                                    </a>
+                                    <a class= "carousel-control-next" href= "#carousel1" data-slide= "next" width= "300">
+                                        <span class= "carousel-control-next-icon" aria-hidden= "true">
+                                        </span>
+                                        <span class= "sr-only">
+                                            Next
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                          
+                        </div>     
+            </section>
+            <br> 
+        {% endblock %}

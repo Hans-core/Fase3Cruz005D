@@ -1,0 +1,114 @@
+body
+{
+   padding: 40px;
+}
+
+#Desarrollo 
+{
+    font-family:Times New Roman;
+    font-size:15px;
+    text-align:left;
+    color:white;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    background-color: gray;
+}
+
+h1
+{
+color:green;
+} 
+
+#inicio
+{
+  float: right;
+  color: white;
+}
+
+#caja1
+{
+    color:black;
+    text-align: center;
+    margin-top: 20px;
+    width: 45%;
+    height: 55px;
+    background-color:chartreuse;
+}
+
+/* estrellas */
+
+#form 
+{
+  width: 500px;
+  margin: 100;
+  height: 300px;
+}
+
+#form label 
+{
+  font-size: 100px;
+}
+
+input[type="radio"] 
+{
+  display: none;
+}
+
+label 
+{
+  color:gray;
+}
+
+.clasificacion 
+{
+  direction: rtl;
+  unicode-bidi: bidi-override;
+} 
+
+label:hover,
+label:hover ~ label 
+{
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+
+#footer
+{
+  color: white;
+  text-align: left;
+  margin-top: 20px;
+  width: 200%;
+  height: 250px;
+  background-color: gray;
+}
+/* para las imagenes efectos */
+#galeria .col-lg-4
+{
+	margin:0 !important;
+	padding:25px;
+}
+#galeria img{
+	width: 100%;
+	height: 450px;
+}
+
+#galeria img:hover{
+  border:5px solid #ff0707;
+  
+}
+/*titulos*/
+#Contactenos
+{
+    color:black;
+    text-align: center;
+    margin-top: auto;
+    width: 18%;
+    height: 40px;
+    background-color:chartreuse;
+}
+

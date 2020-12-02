@@ -1,0 +1,44 @@
+{% extends "base_generic.html" %}
+
+        {% block title %}
+        <title>Inicio de sesion</title>>
+        {% endblock %}
+        {% block content %}
+        
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+    <div class="well well-sm">
+        <!-- redireccion a pagina principal  -->
+        <form action = "index.html" method = "post" name = "datos" onsubmit = "return validacion()">
+            <fieldset>
+                <div id="caja1">
+                    <font face="Freestyle Script"><legend class="col-md-8">Inicie Sesion</legend></font>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <div class="col-md-8">
+                        <input name="email" type="text" required placeholder="@gmail.com" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-8">
+                        <input name="pass" type="password"  placeholder="Contraseña" required minlength="9" class="form-control">
+                    </div>
+
+                <br>
+            
+
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary btn-lg">Iniciar</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+        {% endblock %}
