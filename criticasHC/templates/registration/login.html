@@ -41,6 +41,9 @@
                                 <input type="hidden" name="next" value="{{ next }} "/>
                             </div>
                         </div>
+                        {% load socialaccount %}
+
+                         <a  href="{% provider_login_url 'google' %}"><img src="{% static 'imagenes/google.png' %}" alt="google" height="50px" width="75px"> Ingresar con Google </a>
 
                         <p><a href="{% url 'password_reset' %}">¿Olvidaste tu contraseña?</a></p>
                     </fieldset>
