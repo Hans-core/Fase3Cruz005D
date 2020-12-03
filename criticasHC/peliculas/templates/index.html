@@ -6,19 +6,31 @@
         {% endblock %}
 
         {% block content %}
+
                    <div class="row">
                 <div class="col-lg-12">
+                    {% if user.is_authenticated %}
+
+                        <div id="inicio" >
+                             <p>Bienvenido {{ user }} </p>
+
+                         <a href="{% url 'logout' %}" > Cerrar Sesion</a>
+                         </div>
+                         <br><br>
+
+                    {% else %}
                     <div id="inicio">
                         <p>Conectarse</p>
                     <a href="{% url 'login' %}" class="btn btn-primary btn-lg">Ingresar</a>
                     
                     
                     <p>¿Quieres Crear una cuenta?</p>
-                    <a href="{% url 'registro' %}" class="btn btn-primary btn-lg">Registrar</a>
-                    
+                    <a href="{% url 'signup' %}" class="btn btn-primary btn-lg">Registrar</a>
+                    {% endif %}
                     </div>
                 </div>
             </div>
+
 
             <br><br>
              <!-- informacion de pagina -->

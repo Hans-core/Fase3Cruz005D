@@ -19,6 +19,14 @@
                   <p class="card-text"><h3>Descipción</h3>{{ movie.desc }}</p>
                   <p class="card-text"><h3>Nota</h3>{{ movie.clasif }}/10</p>
                   <p class="card-text"><h3>Nota Publico</h3>{{ movie.clasifplu }}/10</p>
+                  {% if user.is_staff %}
+                  <a href="/peliculas/movie/{{movie.id}}/update/" class="btn btn-primary">Editar</a>
+                  <a href="/peliculas/movie/{{movie.id}}/delete/" class="btn btn-primary">Eliminar</a>
+                  {% endif %}
+                  {% if user.is_authenticated and not user.is_staff %}
+                  <a href="/peliculas/movie/{{movie.id}}/notas/" class="btn btn-primary">califica</a>
+                  {% endif %}
+
                 </div>
               </div>
               </div>
